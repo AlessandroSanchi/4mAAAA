@@ -15,13 +15,14 @@ class Contobancario:
         return self._saldo
     
     def preleva(self,_saldo):
-        print("Prelievo in corso...")
-        print(f"Prelievo di {_saldo} euro effettuato.")
-        self._saldo = self._saldo - _saldo
-        if _saldo < 0:
+        if self._saldo <= 0:
             print("Fondi insufficienti.")
             return self._saldo
-
+        else:
+         print("Prelievo in corso...")
+         print(f"Prelievo di {_saldo} euro effettuato.")
+         self._saldo = self._saldo - _saldo
+         return self._saldo
     
 
 
