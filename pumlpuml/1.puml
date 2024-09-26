@@ -1,0 +1,16 @@
+@startuml a
+
+class Persona {
+    +nome : str
+    +citta: str
+    +eta : str
+
+    __
+    +__init__(self, nome, eta, citta)
+    +saluta(self)
+    +descrizione(self)
+
+
+}
+
+@enduml

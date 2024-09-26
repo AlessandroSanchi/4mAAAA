@@ -1,0 +1,17 @@
+@startuml d
+
+class Veicolo {
+    marca : str
+    modello: str
+
+
+    __
+    __init__(self, marca, modello,)
+    get_numero_veicoli(self)
+
+
+
+}
+
+
+@enduml

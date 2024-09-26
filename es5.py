@@ -47,7 +47,7 @@ print(manager.Get_num_team())  # Output: 3
 
 print("---------------")
 
-eveloper = Developer("Bob", 40000, "Python")
+Developer = Developer("Bob", 40000, "Python")
 print(Developer.Get_nome())  # Output: Bob
 print(Developer.Get_stipendio())  # Output: 40000
-print(Developer.Get_Codice())  # Output: PythonD
+print(Developer.Get_Codice())  # Output: Python
