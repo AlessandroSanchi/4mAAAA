@@ -11,7 +11,8 @@ class Contobancario:
     def deposita(self,_saldo):
         print("Deposito in corso...")
         print(f"Deposito di {_saldo} euro effettuato.")
-        self._saldo + _saldo
+        self._saldo = self._saldo + _saldo
+        return self._saldo
     
     def preleva(self,_saldo):
         print("Prelievo in corso...")
@@ -19,7 +20,7 @@ class Contobancario:
         self._saldo = self._saldo - _saldo
         if _saldo < 0:
             print("Fondi insufficienti.")
-            return
+            return self._saldo
 
     
 
