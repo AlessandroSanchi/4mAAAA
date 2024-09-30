@@ -1,0 +1,37 @@
+@startuml a
+
+class Pagamento {
+    +Nome : str
+    +Codice : int 
+    +Data :int 
+    +Pin : int 
+    +Email 
+    +Password 
+
+    __
+    +def processa_pagamento()
+
+}
+class CartadiCredito {
+     +Nome : str
+     +Codice : int 
+     +Data :int 
+     +Pin : int 
+     __
+     +def processa_pagamento()
+
+}
+class PayPal {
+     +Email
+     +Password
+     __
+     +def processa_pagamento()
+}
+
+    
+
+
+CartadiCredito <|-- Pagamento
+PayPal <|-- Pagamento
+
+@enduml

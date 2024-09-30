@@ -6,7 +6,6 @@ class Persona {
     +eta : str
 
     __
-    +__init__(self, nome, eta, citta)
     +saluta(self)
     +descrizione(self)
 

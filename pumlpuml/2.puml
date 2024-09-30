@@ -6,7 +6,6 @@ class ContoBancario {
     _saldo : int
 
     __
-    +__init__(self, Numero_conto, intestatario, _saldo)
     +get_saldo(self)
     +deposita(self,_saldo)
     +preleva(self,_saldo)

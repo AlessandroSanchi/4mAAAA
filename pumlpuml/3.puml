@@ -6,7 +6,6 @@ class Veicolo {
 
 
     __
-    __init__(self, marca, modello,)
     get_numero_veicoli(self)
 
 
