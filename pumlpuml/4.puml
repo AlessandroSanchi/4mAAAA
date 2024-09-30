@@ -1,0 +1,15 @@
+@startuml a
+
+class Calcolatrice {
+    +numero1 : int
+    +numero2: int
+
+    __
+    +def addizione(numero1,numero2)
+    +def sottrazione (numero1,numero2)
+    +def moltiplicazione (numero1,numero2)
+    +def divisione(numero1,numero2)
+
+}
+
+@enduml
