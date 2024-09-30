@@ -1,0 +1,37 @@
+@startuml a
+
+class Dipendente {
+    +nome : int
+    +stipendio: int
+
+    __
+    +def __init__(self,nome,stipendio)
+
+
+}
+class Manager {
+     +def __init__(self,nome,stipendio,numero_di_team)
+     +super().__init__(nome, stipendio)
+     __
+     +def Get_num_team(self)
+     +def Get_nome(self)
+     +def Get_stipendio(self)
+
+
+}
+class Developer {
+     +def __init__(self,nome,stipendio,codice)
+     +super().__init__(nome, stipendio)
+     __
+     +def Get_num_team(self)
+     +def Get_nome(self)
+     +def def Get_Codice(self)
+}
+
+    
+
+
+Manager <|-- Dipendente
+Developer <|-- Dipendente
+
+@enduml
