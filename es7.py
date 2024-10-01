@@ -18,7 +18,6 @@ class DvD(MaterialeBiblioteca):
 
 
 
-
 # Esempio di utilizzo
 libro = Libro("Il Signore degli Anelli", 1954, "J.R.R. Tolkien", 1178)
 print(libro.get_titolo())  # Output: Il Signore degli Anelli
