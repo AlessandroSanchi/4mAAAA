@@ -33,7 +33,7 @@ class Developer {
     
 
 
-Manager <|-- Dipendente
-Developer <|-- Dipendente
+Dipendente <|-- Manager
+Dipendente<|-- Developer
 
 @enduml

@@ -1,0 +1,57 @@
+@startuml a
+
+class MaterialeBiblioteca {
+    +titolo : str 
+    +anno_pubblicazione : int
+    +disponibile : bool 
+    __
+
+    +def is_disponibile()
+    +def restituzione()
+    +def prestito()
+
+
+
+}
+
+class libro {
+    +titolo : str
+    +anno_pubblicazione : int
+    +autore : str 
+    +numero_pagine : int 
+
+    __
+
+    +def get_titolo()
+    +def get_autore()
+}
+
+class Rivista {
+    +titolo: str
+    +anno_pubblicazione: int
+    +mese_pubblicazione : str
+    +numero_edizione : int 
+    __  
+
+    +def get_numero_edizione()  
+    +def get_titolo()
+}
+
+
+class DvD {
+    +titolo : str 
+    +anno_pubblicazione: int 
+    +regista : str 
+    + durata : int 
+    __ 
+
+    +def get_regista()
+    +def get_durata()
+
+}
+
+
+MaterialeBiblioteca <|-- libro
+MaterialeBiblioteca <|-- Rivista
+MaterialeBiblioteca <|-- DvD
+ 
