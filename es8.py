@@ -5,7 +5,9 @@ class Piatto:
      self.Disponibile = Disponibile
 
     def __str__(self):
-        print( f"{self.nome} - {self.prezzo}€ - {'Disponibile' if self.disponibile else 'Non disponibile'}")
+        print( f"{self.nome} - {self.prezzo}€ - {'Disponibile' if self.Disponibile else 'Non disponibile'}")
+
+        
 
 
     def is_disponibile(self):
@@ -20,16 +22,8 @@ class Piatto:
         if self.is_disponibile():
            self.Disponibile = True 
 
-           
-    def piatti_ordinati():
-        if self.ordina
-
-    def calcola_conto():
-        return None
-
-
-
-
+        
+    
 class Antipasto(Piatto):
     def __init__(self,Nome,Prezzo,ingredienti,porzione):
      super().__init__(Nome,Prezzo)
@@ -42,6 +36,7 @@ class Antipasto(Piatto):
     def get_sugo(self):
         return self.porzione
 
+    
 
 
 class Primo(Piatto):
@@ -85,8 +80,16 @@ class Dolce(Piatto):
          return self.calorie
 
   
+@staticmethod
+def calcola_conto(piatti_ordinati):
+    prezzo = 0
+    for piatti in piatti_ordinati:
+        prezzo += piatti.prezzo
+    return prezzo
 
-
+def stampa_menu(piatti_ordinati):
+    for piatti in piatti_ordinati:
+        print(piatti)
 
 
 
