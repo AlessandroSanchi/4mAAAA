@@ -1,9 +1,9 @@
+
 class Contobancario:
     def __init__(self, Numero_conto, intestatario, _saldo):
         self.Numero_conto = Numero_conto
         self.intestatario = intestatario
         self._saldo = _saldo
-    
 
     def get_saldo(self):
         return self._saldo

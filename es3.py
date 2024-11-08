@@ -1,3 +1,5 @@
+
+
 class Veicolo:
     numero_veicoli = 0 
     def __init__(self, marca, modello,):

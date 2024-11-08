@@ -1,3 +1,5 @@
+
+
 class Dipendente():
     def __init__(self,nome,stipendio):
         self.nome = nome

@@ -1,3 +1,4 @@
+
 class Piatto:
     def __init__(self,Nome,Prezzo,Disponibile : bool = True):
      self.nome = Nome

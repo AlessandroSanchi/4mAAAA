@@ -1,3 +1,5 @@
+
+
 class Pagamento:
     def __init__(self,Nome,Codice,Data,Pin,Email,Password):
         self.Nome = Nome
