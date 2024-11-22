@@ -12,7 +12,10 @@ class Auto:
         return self.tipo
     
 
-    def assegna_motore(self,motore):
+    def associa_motore(self,motore):
+        if self.motore is not None:
+            self.motore = None
+
         self.motore = motore 
         motore.auto = self
          
@@ -40,7 +43,7 @@ auto1 = Auto("Fiat", "500")
 motore1 = Motore("ENG123456", "Benzina")
 
 # Associazione tra auto e motore
-auto1.assegna_motore(motore1)
+auto1.associa_motore(motore1)
 
 # Verifica dell'associazione
 print(f"{auto1.marca} {auto1.modello} ha il motore: {auto1.motore.numero_seriale}")
