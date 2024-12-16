@@ -7,7 +7,7 @@ def check_chance():
         random_number = random.randint(1, 30000)
         r = random.randint(1, 30000)
         
-        if random_number == r and encounters <= 1:
+        if random_number == r and encounters <= 100:
             Shiny += 1
             encounters += 1
             print(f"Shiny!! After {encounters} attempts!!!")
