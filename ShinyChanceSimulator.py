@@ -22,6 +22,7 @@ def check_chance():
         else:
             encounters += 1
 
+
 # Example usage
 result = check_chance()
 print(result)
